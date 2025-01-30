@@ -1,4 +1,6 @@
-﻿namespace COMP003A.LectureActivity3_2
+﻿
+
+namespace COMP003A.LectureActivity3_2
 {
     internal class Program
     {
@@ -17,7 +19,7 @@
             // the first statement initializes the loop variable i to 1
             // the second statement specifies the condition for the loop to continue
             // the third statement increments the loop variable i by 1
-            for (int i =1; i <=10; i++)
+            for (int i = 1; i <= 10; i++)
             {
 
                 // display the multiplication table
@@ -37,8 +39,8 @@
 
 
 
-                    // Display fibonacci series using a do-while loop
-                    Console.WriteLine("\nFibonacci Series:");
+                // Display fibonacci series using a do-while loop
+                Console.WriteLine("\nFibonacci Series:");
                 int FirstNumber = 0, secondNumber = 1, nextNumber; // first two numbers
                 Console.WriteLine($"{FirstNumber} {secondNumber} "); // display first two numbers
                 int count = 2; // count starts at 2
@@ -52,31 +54,21 @@
                     count++; // increment count
                 } while (count < 10); // loop until count reaches 10
 
+
+                // Display favorite fruits in a collection using a foreach loop
+                // Create an array of fruits | data structure preview
+                string[] fruits = { "Apple", "Banana", "Pear", "Strawberry" };
+
+                Console.WriteLine("\n");
+                // Display each fruit using a foreach loop
+                Console.WriteLine("Your favorite fruits are:");
+                // loop through each fruit in the array
+                foreach (string fruit in fruits)
                 {
-                    // Display favorite fruits in a collection using a foreach loop
-                    // Create an array of fruits | data structure preview
-                    string[] fruits = { "Apple", "Banana", "Pear", "Strawberry" };
+                    Console.WriteLine($"-{fruit}");
+                }
 
-                    Console.WriteLine("\n");
-                    // Display each fruit using a foreach loop
-                    Console.WriteLine("Your favorite fruits are:");
-                    // loop through each fruit in the array
-                    foreach (string fruit in fruits)
-                    {
-                        Console.WriteLine($"-{fruit}");
-                    }
-
-                
-
-
-
-
-
-
-                
-
-            
-           
-        
-    
-
+            }
+        }
+    }
+}
